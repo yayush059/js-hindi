@@ -1,3 +1,4 @@
+/*
 let score = 30              //number
 console.log(typeof score)   //number
 console.log(typeof(score))  //number
@@ -69,7 +70,6 @@ console.log()
 // "" (string)     -> false (boolean)
 // "djfh" (string) -> true (boolean)
 
-
 let somenum = 3
 console.log(somenum)
 console.log(typeof somenum)
@@ -78,5 +78,38 @@ console.log(Stringnum)
 console.log(typeof Stringnum)
 
 console.log()
+*/
 
 // 3 (number) -> 3 (string)
+
+// **********************OPERATIONS***************************
+/*
+let value = 3
+let negvalue = -value
+console.log(negvalue)
+
+console.log()
+
+console.log(2+2)
+console.log(2*2)
+console.log(2-2)
+console.log(2**3)
+console.log(5/2)
+console.log(5%2)
+console.log(5%10)
+
+*/
+/*
+console.log(2+2)           //4
+console.log("2"+"2")       //22
+console.log("2"+2)         //22
+console.log(2+"2")         //22
+console.log(2+2+"2")       //42
+console.log("2"+2+2)       //222
+console.log(2+"2"+2)       //222
+*/
+
+console.log(true)
+console.log(+true)
+console.log(-true)
+console.log(+"")
