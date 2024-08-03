@@ -47,3 +47,11 @@ const myFun = function(){
     biginteger -> bigint
 
 */
+
+/////////////////////////////////////////////////////////////////////
+// types of memory.
+// Stack (primitive)  , Heap (non-primitive)
+
+// from stack we get copy 
+// from heap we get reference
+
