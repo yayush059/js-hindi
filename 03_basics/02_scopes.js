@@ -72,3 +72,15 @@
 // function myFunction() {
 // // code here can also use carName
 // }
+
+const addOne = function(num){
+    return num + 1
+}
+console.log(addOne(5))
+
+
+// functions stored in variable
+const addTwo = function(num){        //if we want to access this function from above of this function it will give error.
+    return num + 2
+}
+console.log(addTwo(5))
