@@ -52,13 +52,38 @@ const user = [
         email: "suyash@gmail.com"
     }
 ]
-console.log(user);
-console.log(tinderUser1);
+// console.log(user);
+// console.log(tinderUser1);
 
 
 //KEYS AND VALUES
-console.log(Object.keys(tinderUser1))
-console.log(Object.values(tinderUser1))
-console.log(Object.entries(tinderUser1))
-console.log(Object.entries(tinderUser1))
-console.log(tinderUser1.hasOwnProperty('city'));
+// console.log(Object.keys(tinderUser1))
+// console.log(Object.values(tinderUser1))
+// console.log(Object.entries(tinderUser1))
+// console.log(Object.entries(tinderUser1))
+// console.log(tinderUser1.hasOwnProperty('city'));
+
+
+//When we have to print any value more than once , 
+//we need to type long syntax many times, we can shorten the syntax
+//this is known as destructure
+const course = {
+    coursename: "js in hindi",
+    price: 999,
+    courseinstructor: "Hitesh"
+}
+
+const {courseinstructor} = course
+console.log(courseinstructor)
+
+const {courseinstructor: instructor} = course           // we can name it by our own
+console.log(instructor)
+
+
+//JSON FILE FORMAT
+// {
+//     "name": "ayush",
+//     "age": 21,
+//     "city": "Raebareli"
+// }
+
