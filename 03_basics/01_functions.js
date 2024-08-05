@@ -28,5 +28,37 @@ function loginUserMessage(username = "sam"){               //(username = sam) wi
     }
     return `${username} just logged in`
 }
-console.log(loginUserMessage())
+// console.log(loginUserMessage())
+
+
+function calculateCartPrice(num1, num2, ...num3){
+    return num3
+}
+// console.log(calculateCartPrice(100,50,200,600))
+
+
+//handle objects in function
+const user = {
+    name: "ayush",
+    age: 21
+}
+
+function handleObject(anyobj){
+    console.log(`Username is ${anyobj.name} and his age is ${anyobj.age}`)
+}
+handleObject(user);
+
+//we can directly pass user objectinto function
+handleObject({
+    name: "piyus",
+    age: 19
+});
+
+function secondValue(arr){
+    return arr[1]
+}
+const array = [5,4,8,3,1]
+console.log(secondValue(array));
+
+
 
