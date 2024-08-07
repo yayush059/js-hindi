@@ -15,12 +15,12 @@ let userEmail;
 
 const id = Symbol('123')                   //typeof -> Symbol
 const userId = Symbol('123')               //typeof -> Symbol
-// console.log(id==userId)
-// console.log(id===userId)
+// console.log(id==userId)                 //false
+// console.log(id===userId)                //false
 
 
 const BIGnum = 54123654125896569855n
-//console.log(typeof BIGnum)    //bigint
+console.log(typeof BIGnum)               //bigint
 
 const heros = ["shaktiman", "naagraaj", "doga"]
 let myObj ={
@@ -34,6 +34,8 @@ console.log(myObj)
 const myFun = function(){
     console.log("Hello World")         //typeof for function will give function
 }
+// console.log(myFun)                   //[Function: myFun]
+// console.log(typeof myFun)              //function
 
 /****************    SUMMARY   ******************/
 /*  typeof

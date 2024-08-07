@@ -16,6 +16,6 @@ let loggedIn = false
 
 // objects
 
-console.log(typeof "Ayush")
-console.log(typeof null)
-console.log(typeof undefined)
+console.log(typeof "Ayush")     //string
+console.log(typeof null)         // object
+console.log(typeof undefined)      //undefined

@@ -1,10 +1,10 @@
 const name = "Ayush"
 const repoCount = 50
 
-//console.log(name + repoCount + " Value")
+// console.log(name + repoCount + " Value")           //Ayush50 Value
 
 
-// Another option of string concatenation, is string interpolation,
+// Another option of string concatenation, is STRING INTERPOLATION,
 // which substitutes values of variables into placeholders in a string.
 console.log(`my name is ${name} and my repo count is ${repoCount}`)
 
@@ -17,6 +17,8 @@ console.log(oldgamename.length)
 console.log(oldgamename.endsWith('g'))
 console.log(oldgamename.endsWith('f'))
 console.log(oldgamename.includes('b'))
+
+console.log(gamename.toUpperCase)               //[Function: toUpperCase]              
 const uprcase = oldgamename.toUpperCase()
 console.log(oldgamename)
 console.log(uprcase)
@@ -36,8 +38,9 @@ console.log(newString2.trim().length)
 console.log(newString2.trim())
 
 const url = "https://yayush yadav vitap"
-console.log(url.replace(' ','-'))
+console.log(url.replace(' ','-'))               //replaces only first occurance
 
 const string3 = "my name is ayush yadav"
-console.log(string3.split(" "))
+console.log(string3.split(" "))                  
+console.log(typeof string3.split(" "))                  //added into  a object
 
