@@ -10,4 +10,7 @@
 // allmwheading.forEach(function(h){
 //     h.style.color="red"
 // )
-
+var a = "ayush"
+console.log(a)
+{let a = "yadav"
+console.log(a)}
