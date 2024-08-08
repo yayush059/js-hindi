@@ -1,0 +1,4 @@
+// dom manipulation
+// document.getElementById('firstHeading')
+// document.getElementById('firstHeading').innerHTML="<h1>chai aur code</h1>"
+// to change the elemnt in the web page
