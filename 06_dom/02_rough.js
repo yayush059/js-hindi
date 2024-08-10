@@ -20,7 +20,16 @@ function add(a) {
 }
   
 // Example usage:
-const result = add(1)(2)(3)(6);
-console.log(result); // Outputs: 6
-  
+// const result = add(1)(2)(3);
+// console.log(result); // Outputs: 6
+
+
+//CONVERTING OBJECT TO STRING
+// const myObj2 = {
+//     name:"ayush",
+//     age:24
+// }
+// const strObj = JSON.stringify(myObj2)
+// console.log(strObj)                                  // "name":"ayush","age":24}
+// console.log(typeof strObj)                        //  string
 
