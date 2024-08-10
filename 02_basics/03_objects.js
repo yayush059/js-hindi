@@ -25,13 +25,13 @@ const jsUser = {
     lastLoginDays: ["Monday", "Tuesday"]
 }
 
-// console.log(jsUser.email)
+console.log(jsUser["last name"])
 // console.log(jsUser["email"])
 // console.log(jsUser["last name"])
 // console.log(jsUser["mysymbol"])
 // console.log(jsUser.mysymbol2)             //objects should not be accessed like this
 // console.log(jsUser[mysymbol2])             // correct way of accessing obj
-
+console.log(typeof jsUser[mysymbol2])
 
 //how to change values in objects
 jsUser.email = "ayush@chatgpt.com"
@@ -42,13 +42,13 @@ jsUser.email = "ayush@chatgpt.com"
 jsUser.location = "Raebareli"
 // console.log(jsUser)
 
-jsUser.greeting = function(){
-    console.log("Hello JS User")
-}
+// jsUser.greeting = function(){
+//     console.log("Hello JS User")
+// }
 
-jsUser.greeting2 = function(){
-    console.log(`Hello JS User, ${this.name}`)
-}
+// jsUser.greeting2 = function(){
+//     console.log(`Hello JS User, ${this.name}`)
+// }
 
-console.log(jsUser.greeting())
-console.log(jsUser.greeting2())
+// console.log(jsUser.greeting())
+// console.log(jsUser.greeting2())

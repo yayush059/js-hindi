@@ -12,10 +12,10 @@ const tinderUser1 = {
 
 //METHOD2
 const tinderUser2 = {}
-tinderUser2.name= "Piyush"
+tinderUser2.name= "Ayush"
 tinderUser2.age= 19
 tinderUser2.city= "Raebareli"
-// console.log(tinderUser2)
+console.log(tinderUser2)
 
 const users = {
     email: "ayush@google.com",
@@ -74,10 +74,10 @@ const course = {
 }
 
 const {courseinstructor} = course
-console.log(courseinstructor)
+// console.log(courseinstructor)
 
 const {courseinstructor: instructor} = course           // we can name it by our own
-console.log(instructor)
+// console.log(instructor)
 
 
 //JSON FILE FORMAT
