@@ -5,9 +5,9 @@ const myObject ={
     py: 'python'
 }
 
-// for (const key in myObject) {
-//     console.log(`${key} : ${myObject[key]}`)
-// }
+for (const key in myObject) {
+    console.log(`${key} : ${myObject[key]}`)
+}
 
 // //can forin loop be used on array
 const marvel_heros = ["thor", "ironman", "spiderman"]
@@ -73,6 +73,6 @@ const myCoding = [
     }
 ]
 
-myCoding.forEach((item) => {
-    console.log(item.languageName)
-})
+// myCoding.forEach((item) => {
+//     console.log(item.languageName)
+// })

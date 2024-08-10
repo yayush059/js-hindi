@@ -31,9 +31,9 @@
 
 //FOR OF LOOP
 const arr = [1,2,3,4,5]
-for (const num of arr) {               //forof loop give directly values
-    console.log(num)                   //forin gives keys but arr[key] will give values.
-}
+// for (const num of arr) {               //forof loop give directly values
+//     console.log(num)                   //forin gives keys but arr[key] will give values.
+// }
 
 // const greeting = "Hello World"
 // for (const greet of greeting) {
@@ -66,3 +66,14 @@ const myObj = {
 // for (const game of myObj) {
 //     console.log(game)                    //myObj is not iterable
 // }
+
+
+
+const a ={}
+const b = {key:"b"}
+const c = {key:"c"}
+
+a[b] =123
+a[c] = 456
+
+console.log(a)

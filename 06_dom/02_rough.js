@@ -11,3 +11,16 @@
 //     h.style.color="red"
 // )
 
+function add(a) {
+    return function(b) {
+        return function(c) {
+            return a + b + c;
+        }
+    }
+}
+  
+// Example usage:
+const result = add(1)(2)(3)(6);
+console.log(result); // Outputs: 6
+  
+
