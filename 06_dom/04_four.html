@@ -34,10 +34,10 @@
 
     //Edit
     const secondLang = document.querySelector("li:nth-child(2)");
-    // secondLang.innerHTML = "Mojo";
+    // secondLang.innerHTML = "Mojo";               // NOT Optimized approach , it will traverse completely
     // // console.log(secondLang);
     const newli = document.createElement('li');
-    newli.textContent = "Mojo";
+    newli.textContent = "Mojo";                    //notmuch difference in text content and inner html
     secondLang.replaceWith(newli);
 
     //edit
