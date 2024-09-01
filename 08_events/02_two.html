@@ -21,6 +21,14 @@
    </div>
 </body>
 <script>
-    document.querySelector
+    // removing complete li from the list.
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.tagName)
+        // method 1
+        if(e.target.tagName === 'IMG'){
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+    })
 </script>
 </html>
