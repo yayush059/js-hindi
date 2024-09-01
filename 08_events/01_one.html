@@ -35,7 +35,7 @@
     //     console.log(e);
     // }, false)
     // // important events to study
-    // // type, timestamp, defaultPrevented, target, toElement, srcElement, currentTarget,
+    // // type, timestamp, preventdefault, target, toElement, srcElement, currentTarget,
     // // clientX, clientY, screenX, screenY, altKey, ctrlKey, shiftKey, keyCode
 
     // // EVENT PROPAGATION 
@@ -52,11 +52,20 @@
 
     document.getElementById('images').addEventListener('click', function(){
         console.log('clicked inside ul');
-    }, true)
+    })
 
-    document.getElementById('owl').addEventListener('click', function(){
+    document.getElementById('owl').addEventListener('click', function(e){
         console.log('owl clicked');
-    }, true)                                                                   //clicked inside ul    //owl clicked   (out to inside)
+        e.stopPropagation();
+    })                                                                   //clicked inside ul    //owl clicked   (out to inside)
+
+    // to stop event propagation we will stop it by using e.stopPropagation ,,, this works only for false
+
+    document.getElementById('google').addEventListener('click',function(e){
+        console.log("google clicked");
+        e.preventDefault()
+        e.stopPropagation() 
+    },false)
 
 
 
