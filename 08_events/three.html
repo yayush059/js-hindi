@@ -12,5 +12,15 @@
     
 </body>
 <script>
+    document.querySelector('#start').addEventListener('click',function(){
+        const mydate = function(){
+            console.log(Date.now())
+        }
+        intervalId = setInterval(mydate, 1000)
+    })
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(intervalId)
+    })
 </script>
 </html>
