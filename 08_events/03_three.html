@@ -12,17 +12,20 @@
 <script>
     // setTimeout(function(){
     //     console.log("Ayush")
-    // },2000)
+    // },2000)                         // will print ayush after 2 sec, and  will be printed only once
 
     // 2nd method
+
+
     const myfunc = function(){
         console.log("Ayush")
     }
-    setTimeout(myfunc, 2000);
+    // setTimeout(myfunc, 2000);
 
     const changeText = function(){
         document.querySelector('h1').innerHTML = "best JS series"
     }
+    
     const changeMe = setsetTimeout(changeText, 2000)
     document.querySelector('#stop').addEventListener('click', function(){
         clearTimeout(changeMe)
