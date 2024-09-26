@@ -17,7 +17,7 @@ new Promise(function(resolve,reject){
     setTimeout(function(){
         console.log('async task 2')
         resolve()
-    },2000)
+    },1000)
 }).then(function(){
     console.log('task 2 resolved')
 })
@@ -30,8 +30,21 @@ promise3.then(function(user){
 })
 
 const promise4 = new Promise(function(resolve,reject){
-    resolve()
+    setTimeout(function(){
+        let error = false
+        if(!error){
+            resolve({username: "Ayush", email: "yayush059@gmail.com"})
+        }
+        else{
+            reject('ERROR: Something went wrong.')
+        }
+    },1000)
 })
-promise4.then(function(){
-    
+promise4.then(function(user){
+    console.log(user)
+    return user.username
+}).then(function(username){
+    console.log(username)
+}).catch(function(error){
+    console.log(error);
 })
