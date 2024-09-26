@@ -23,7 +23,7 @@ new Promise(function(resolve,reject){
 })
 
 const promise3 = new Promise(function(resolve,reject){
-    resolve({username: "chai", email: "chai@example.com"})
+    resolve({username: "chai", email: "chai@example.com"})                   //resolve mein object jaata hai
 },3000)
 promise3.then(function(user){
     console.log(user)
@@ -47,4 +47,17 @@ promise4.then(function(user){
     console.log(username)
 }).catch(function(error){
     console.log(error);
+}).finally(function(){
+    console.log('Promise is either resolved or rejected')
 })
+
+
+const promise5 = new Promise(function(resolve,reject){
+    let error = true
+    if(!error){
+        resolve({username: "javascript", password: "12345"})
+    }
+    else{
+        reject("ERROR: Not javascript")
+    }
+},1000)
