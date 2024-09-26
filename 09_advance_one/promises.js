@@ -58,6 +58,46 @@ const promise5 = new Promise(function(resolve,reject){
         resolve({username: "javascript", password: "12345"})
     }
     else{
-        reject("ERROR: Not javascript")
+        reject("ERROR: javascript went wrong")
     }
 },1000)
+
+async function consumePromise5() {
+    try {
+        const respose = await promise5
+        console.log(respose)
+    } catch (error) {
+        console.log(error)
+    }
+}
+consumePromise5()
+
+//we can use any of the promise4 / or promise5 both are same with dif syntax
+
+// fetching data 
+
+// async function getAllUsers(){
+//     try {
+//         const response = await fetch('https://jsonplaceholder.typicode.com/users')
+//         const data = await response.json()
+//         console.log(data)
+//     } 
+//     catch (error) {
+//         console.log('E:', error)
+//     }
+// }
+
+// getAllUsers();
+
+fetch("https://jsonplaceholder.typicode.com/users")
+.then(function(response){
+    return response.json();
+})
+.then((data) => {
+    console.log(data)
+})
+.catch((error) => console.log(error))
+
+
+//important
+//error 404 comes from response not from reject
