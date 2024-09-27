@@ -6,7 +6,7 @@ const user = {
     getUserDetails: function(){
         //console.log("Got user details from database");
         // console.log(`Username: ${this.username}`);
-        console.log(this);
+        console.log(this); // this is used for current context 
     }
 
 }
@@ -28,7 +28,7 @@ function User(username, loginCount, isLoggedIn){
 
     }
 
-    return this
+    return this ///chaahe likho ya na likho
 }
 
 const userOne = new User("hitesh", 12, true)
